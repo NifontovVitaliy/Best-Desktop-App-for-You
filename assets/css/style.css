@@ -167,7 +167,8 @@ h1 {
 .header_text {
     font-weight: 400;
     font-size: 16px;
-    color: #929292;;
+    color: #929292;
+    ;
 }
 
 .buttons {
@@ -180,15 +181,45 @@ h1 {
     border: 1px solid #0F7BFF;
     background-color: #0F7BFF;
     border-radius: 25px;
-    padding: 14px;    
+    padding: 14px;
 }
 
-.button :hover{
+.button :hover {
     background-color: #fff;
     color: #0F7BFF;
 }
 
-.button_text{
+.button_text {
     color: #fff;
 }
+
+.phone1 {
+    background: url("../img/header/Phone1.png") center/100% no-repeat;
+    position: absolute;
+    width: 265px;
+    height: 527px;
+    left: 557px;
+    top: 626px;
+}
+
+.phone3 {
+    position: absolute;
+    width: 265px;
+    height: 527px;
+    left: 1096px;
+    top: 626px;
+    background: url("../img/header/Phone3.png") center/100% no-repeat;
+}
+
+.phone2 {
+    background: url("../img/header/Phone2.png") center/100% no-repeat;
+    position: absolute;
+    width: 319px;
+    height: 918px;
+    left: 801px;
+    top: 535px;
+}
+
+
+
 /* ---------- */
