@@ -55,6 +55,7 @@ button::-moz-focus-inner {
 
 a, a:visited {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
@@ -80,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header_main {
     background: url("../img/header/Vector\ 1.png") no-repeat;
-    max-width: 1920px;
+    width: 100%;
     height: 100vh;
 }
 
@@ -88,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav {
     max-width: 1644px;
+    width: 90%;
     margin: 0 140px 0 136px;
     display: flex;
     justify-content: space-between;
@@ -133,7 +135,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+.nav_button:hover {
+    background-color: #fff;
+    color: #0F7BFF;
+}
+
 .nav_item {
+    font-size: 16px;
     color: #333;
     transition: color .2s linear;
 }
@@ -168,35 +176,49 @@ h1 {
     font-weight: 400;
     font-size: 16px;
     color: #929292;
-    ;
+    line-height: 1.3em;
 }
 
 .buttons {
     display: flex;
 }
 
-.elem_button {
+.buttons>.elem_button {
     width: 166px;
     height: 50px;
+    color: #fff;
     border: 1px solid #0F7BFF;
     background-color: #0F7BFF;
     border-radius: 25px;
     padding: 14px;
+    margin-right: 30px;
+    cursor: pointer;
 }
 
-.button :hover {
-    background-color: #fff;
-    color: #0F7BFF;
-}
-
-.button_text {
+a {
     color: #fff;
+}
+
+.elem_button:hover {
+    color: #0F7BFF;
+    background-color: #fff;
+}
+
+/* devices */
+
+.devices {
+    /*                           1st problem is here         */
+    z-index: -10; 
+    position: absolute;
+    margin: 0 auto;
+    top: -36px;
+    left: -69px;
 }
 
 .phone1 {
     background: url("../img/header/Phone1.png") center/100% no-repeat;
     position: absolute;
-    width: 265px;
+    width: 329px;
     height: 527px;
     left: 557px;
     top: 626px;
@@ -204,22 +226,85 @@ h1 {
 
 .phone3 {
     position: absolute;
-    width: 265px;
+    width: 330px;
     height: 527px;
-    left: 1096px;
+    left: 1105px;
     top: 626px;
     background: url("../img/header/Phone3.png") center/100% no-repeat;
 }
 
 .phone2 {
+    z-index: 10;
     background: url("../img/header/Phone2.png") center/100% no-repeat;
     position: absolute;
-    width: 319px;
+    width: 413px;
     height: 918px;
     left: 801px;
     top: 535px;
 }
 
-
-
 /* ---------- */
+
+/*          Features              */
+
+.features_main {    
+    height: 635px;
+    background-color: #F5FCFD;
+    display: flex;
+    justify-content: center;
+}
+
+/* card */
+
+.card {
+    margin-right: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 362px;
+    height: 290px;
+}
+
+.card_icon {
+    margin-top: 40px;
+    width: 70px;
+    height: 70px;    
+}
+
+.card_title {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card_text {
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+.first_card .card_icon{
+    background: url("../img/features/Analysis.png");
+}
+
+.second_card .card_icon{
+    background: url("../img/features/CleanDesign.png");
+}
+
+.third_card .card_icon{
+    background: url("../img/features/Messaging.png");
+}
+
+.first_card, .third_card{
+    margin-top: 165px;
+}
+
+.second_card{
+    margin-top: 215px;
+}
+
+
+ 
+/*  */
