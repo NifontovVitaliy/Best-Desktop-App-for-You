@@ -75,6 +75,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+/* .container{
+    max-width: 1351px;
+} */
+
 /*--------------------*/
 
 /*               Header                 */
@@ -112,15 +116,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 100px;
     border-radius: 0px 0px 21.5px 21.5px;
     background-color: #0F7BFF;
-    color: #fff;
     padding: 25px 23px 32px 23px;
     font-weight: bold;
     font-size: 36px;
     cursor: pointer;
-}
-
-.nav_item {
-    margin-left: 52px;
 }
 
 .nav_button {
@@ -129,9 +128,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px;
     border-radius: 25px;
     padding: 15px 51px;
-}
-
-.nav_button>a {
     color: #fff;
 }
 
@@ -141,6 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav_item {
+    margin-left: 52px;
     font-size: 16px;
     color: #333;
     transition: color .2s linear;
@@ -208,7 +205,7 @@ a {
 
 .devices {
     /*                           1st problem is here         */
-    z-index: -10; 
+    z-index: -10;
     position: absolute;
     margin: 0 auto;
     top: -36px;
@@ -247,7 +244,7 @@ a {
 
 /*          Features              */
 
-.features_main {    
+.features_main {
     height: 635px;
     background-color: #F5FCFD;
     display: flex;
@@ -270,7 +267,7 @@ a {
 .card_icon {
     margin-top: 40px;
     width: 70px;
-    height: 70px;    
+    height: 70px;
 }
 
 .card_title {
@@ -285,26 +282,49 @@ a {
     font-weight: 300;
     text-align: center;
 }
-.first_card .card_icon{
+
+.first_card .card_icon {
     background: url("../img/features/Analysis.png");
 }
 
-.second_card .card_icon{
+.second_card .card_icon {
     background: url("../img/features/CleanDesign.png");
 }
 
-.third_card .card_icon{
+.third_card .card_icon {
     background: url("../img/features/Messaging.png");
 }
 
-.first_card, .third_card{
+.first_card, .third_card {
     margin-top: 165px;
 }
 
-.second_card{
+.second_card {
     margin-top: 215px;
 }
 
+/* About */
 
- 
-/*  */
+.about_main {
+    position: relative;
+    width: 1351px;
+}
+
+.blue_square {
+    position: absolute;
+    width: 389.71px;
+    height: 482.98px;
+    background: linear-gradient(272deg, #0F7BFF 4.58%, #0063DD 78.9%);
+    border-radius: 40px;
+    transform: matrix(0.77, -0.64, -0.64, -0.77, 0, 0);
+}
+
+.square_down {
+    left: 1336.86px;
+    top: 2909.49px;
+}
+
+.square_up {
+    left: 284px;
+    top: -35px;
+}
