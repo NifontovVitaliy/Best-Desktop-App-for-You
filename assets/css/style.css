@@ -106,8 +106,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     align-items: center;
 }
-
-.nav_button {
+/* TODO: center */
+.nav_button {    
     margin-left: 52px;
 }
 
@@ -117,6 +117,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0px 0px 21.5px 21.5px;
     background-color: #0F7BFF;
     padding: 25px 23px 32px 23px;
+    color:#fff;
     font-weight: bold;
     font-size: 36px;
     cursor: pointer;
@@ -175,7 +176,7 @@ h1 {
     color: #929292;
     line-height: 1.3em;
 }
-
+/* TODO: center */
 .buttons {
     display: flex;
 }
@@ -201,7 +202,7 @@ h1 {
 /* devices */
 
 .devices {
-    /*                           1st problem is here         */
+    /*    problem is here         */
     z-index: -10;
     position: absolute;
     margin: 0 auto;
@@ -308,6 +309,7 @@ h1 {
 }
 
 .blue_square {
+    z-index: -100;
     position: absolute;
     width: 389.71px;
     height: 482.98px;
@@ -324,4 +326,65 @@ h1 {
 .square_up {
     left: 284px;
     top: -35px;
+}
+
+.easy_messaging{
+    border: 1px solid black;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+    margin: 60px auto;
+    width: 1162px;    
+    height: 373px;
+}
+
+.messaging_photo{   
+    margin: 0;
+    box-sizing: border-box;
+    width: 50%;
+    height: 373px;
+    background: url("../img/about/easy_messaging.png") center/100% no-repeat;
+}
+
+.messaging_text{
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 128px;
+    text-align: left;
+    width: 50%;    
+}
+
+.messaging_text>h2{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.messaging_text>p{
+    margin-bottom: 35px;
+}
+.arrow_link{
+    align-items: center;
+    margin-right: 15px;
+    color: #0F7BFF !important;
+}
+
+
+.txt_link{
+    height: 15px;
+    align-items: center;
+    display: flex;
+}
+
+/* TODO: after */
+
+.arrow_right{ 
+    margin-top: 3px;
+    height: 15px;
+    width: 67px;
+    background: url("../img/about/arrow-right.png") center/100% no-repeat;
+}
+
+.arrow_right:hover{
+    cursor: pointer;
 }
